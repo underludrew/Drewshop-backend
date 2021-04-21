@@ -1,0 +1,27 @@
+server:
+  port: 18080
+
+##spring配置项
+spring:
+  application:
+    name: drewshop-web-service
+
+nacos:
+  config:
+    server-addr: 192.158.158.131:8848
+
+
+# Dubbo配置项
+dubbo:
+  protocol:
+    name: dubbo
+    port: 20881
+#  scan:
+#    base-packages: only.undrewyan.drewshop.rpc
+  registry:
+    address: nacos://${nacos.config.server-addr}
+  application:
+    name: ${spring.application.name}
+#  provider:
+#    TestRpc:
+#      version: 1.0.0

@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  only.undrewyan.drewshop.web.config.CommonWebAutoConfiguration

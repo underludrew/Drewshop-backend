@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_ADDITIONAL_VM_OPTIONS" value="-Djps.track.ap.dependencies=false" />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="drewshop-authentication" />
+      </profile>
+      <profile name="Annotation profile for drewshop" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../../developer_tools/maven/maven-repository/org/mapstruct/mapstruct-processor/1.3.0.Final/mapstruct-processor-1.3.0.Final.jar" />
+          <entry name="$PROJECT_DIR$/../../../../developer_tools/maven/maven-repository/com/jolira/hickory/1.0.0/hickory-1.0.0.jar" />
+          <entry name="$PROJECT_DIR$/../../../../developer_tools/maven/maven-repository/org/mapstruct/mapstruct/1.3.0.Final/mapstruct-1.3.0.Final.jar" />
+          <entry name="$PROJECT_DIR$/../../../../developer_tools/maven/maven-repository/junit/junit/4.12/junit-4.12.jar" />
+          <entry name="$PROJECT_DIR$/../../../../developer_tools/maven/maven-repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar" />
+          <entry name="$PROJECT_DIR$/../../../../developer_tools/maven/maven-repository/com/google/guava/guava/19.0/guava-19.0.jar" />
+          <entry name="$PROJECT_DIR$/../../../../developer_tools/maven/maven-repository/com/puppycrawl/tools/checkstyle/8.14/checkstyle-8.14.jar" />
+          <entry name="$PROJECT_DIR$/../../../../developer_tools/maven/maven-repository/javax/inject/javax.inject/1/javax.inject-1.jar" />
+          <entry name="$PROJECT_DIR$/../../../../developer_tools/maven/maven-repository/org/codehaus/plexus/plexus-container-default/1.6/plexus-container-default-1.6.jar" />
+          <entry name="$PROJECT_DIR$/../../../../developer_tools/maven/maven-repository/org/springframework/spring-test/4.0.3.RELEASE/spring-test-4.0.3.RELEASE.jar" />
+          <entry name="$PROJECT_DIR$/../../../../developer_tools/maven/maven-repository/org/springframework/spring-beans/4.0.3.RELEASE/spring-beans-4.0.3.RELEASE.jar" />
+          <entry name="$PROJECT_DIR$/../../../../developer_tools/maven/maven-repository/org/springframework/spring-context/4.0.3.RELEASE/spring-context-4.0.3.RELEASE.jar" />
+          <entry name="$PROJECT_DIR$/../../../../developer_tools/maven/maven-repository/joda-time/joda-time/2.9/joda-time-2.9.jar" />
+          <entry name="$PROJECT_DIR$/../../../../developer_tools/maven/maven-repository/org/projectlombok/lombok/1.16.14/lombok-1.16.14.jar" />
+        </processorPath>
+        <module name="drewshop-spring-boot-starter-web" />
+        <module name="drewshop-springboot-stater-mybatis" />
+        <module name="drewshop-springboot-starter-dubbo" />
+        <module name="drewshop-sso-service-api" />
+        <module name="drewshop-web-app" />
+        <module name="drewshop-user-service-app" />
+        <module name="common-framework" />
+        <module name="drewshop-user-service-api" />
+        <module name="drewshop-sso-service-app" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="only.undrweyan.drewshop.drewshop-user-project" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common" options="-parameters" />
+      <module name="common-framework" options="-parameters" />
+      <module name="drewshop-authentication" options="-parameters" />
+      <module name="drewshop-dependencies" options="-parameters" />
+      <module name="drewshop-spring-boot-starter-web" options="-parameters" />
+      <module name="drewshop-springboot-starter-dubbo" options="-parameters" />
+      <module name="drewshop-springboot-stater-mybatis" options="-parameters" />
+      <module name="drewshop-sso-project" options="-parameters" />
+      <module name="drewshop-sso-service-api" options="-parameters" />
+      <module name="drewshop-sso-service-app" options="-parameters" />
+      <module name="drewshop-user-project" options="-parameters" />
+      <module name="drewshop-user-service-api" options="-parameters" />
+      <module name="drewshop-user-service-app" options="-parameters" />
+      <module name="drewshop-web-app" options="-parameters" />
+    </option>
+  </component>
+</project>

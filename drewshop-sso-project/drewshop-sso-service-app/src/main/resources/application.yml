@@ -1,0 +1,50 @@
+server:
+  port: 18887
+##spring配置项
+
+spring:
+  application:
+    name: drewshop-sso-service-provider
+  datasource:
+    url: jdbc:mysql://121.5.137.64:3306/drewshop?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=CTT
+    username: root
+    password: Sunshine123,.
+
+nacos:
+  config:
+    server-addr: 192.158.158.131:8848
+
+
+# Dubbo配置项
+dubbo:
+  protocol:
+    name: dubbo
+    port: 20882
+  scan:
+    base-packages: only.undrewyan.drewshop.rpc
+  registry:
+    address: nacos://${nacos.config.server-addr}
+  application:
+    name: ${spring.application.name}
+  provider:
+    TestRpc:
+      version: 1.0.0
+    AuthenticationRpc:
+
+
+## MyBatis Plus 配置项
+#mybatis-plus:
+#  configuration:
+#    map-underscore-to-camel-case: true # 虽然默认为 true ，但是还是显示去指定下。
+#  global-config:
+#    db-config:
+#      id-type: auto
+#      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+#      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+#  mapper-locations: classpath*:mapper/*.xml
+#  type-aliases-package: only.undrewyan.drewshop.userservice.dal.mysql.dataobject
+
+# MyBatis Plus 配置项
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false # 虽然默认为 true ，但是还是显示去指定下。

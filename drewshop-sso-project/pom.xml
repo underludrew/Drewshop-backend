@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>drewshop</artifactId>
+        <groupId>only.undrewyan</groupId>
+        <version>1.0.0</version>
+    </parent>
+
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>drewshop-sso-project</artifactId>
+    <packaging>pom</packaging>
+
+
+    <modules>
+        <module>drewshop-sso-service-api</module>
+        <module>drewshop-sso-service-app</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--drewshop 基础bom-->
+            <dependency>
+                <groupId>only.undrewyan</groupId>
+                <artifactId>drewshop-dependencies</artifactId>
+                <version>1.0.0</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>only.undrewyan</groupId>
+                <artifactId>common-framework</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+
+            <!--导入自身子模块-->
+            <dependency>
+                <groupId>only.undrewyan</groupId>
+                <artifactId>drewshop-sso-service-api</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+
+
+        </dependencies>
+    </dependencyManagement>
+
+
+
+</project>

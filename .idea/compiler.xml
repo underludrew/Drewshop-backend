@@ -4,12 +4,6 @@
     <option name="BUILD_PROCESS_ADDITIONAL_VM_OPTIONS" value="-Djps.track.ap.dependencies=false" />
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="drewshop-authentication" />
-      </profile>
       <profile name="Annotation profile for drewshop" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -42,6 +36,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="drewshop-authentication" target="1.8" />
       <module name="only.undrweyan.drewshop.drewshop-user-project" target="8" />
     </bytecodeTargetLevel>
   </component>
